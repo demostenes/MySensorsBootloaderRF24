@@ -64,7 +64,7 @@
 #define BOOTLOADER_COMMANDS					// Enable low level bootloader commands
 
 // SPI bus setting *****************************************************************************************************
-#if !(defined(SPI_PINS_CE9_CSN10) || defined(SPI_PINS_CSN7_CE8))
+#if !(defined(SPI_PINS_CE9_CSN10) || defined(SPI_PINS_CSN7_CE8) || defined(SPI_PINS_CE7_CSN8))
 
 #ifdef USED_MAKEFILE_SPI_PINS
 #error Invalid value for SPI_PINS Makefile variable
@@ -72,6 +72,7 @@
 
 #define SPI_PINS_CE9_CSN10							
 //define SPI_PINS_CSN7_CE8
+//define SPI_PINS_CE7_CSN8
 #endif
 
 // LED settings ********************************************************************************************************
